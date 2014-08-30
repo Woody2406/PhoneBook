@@ -14,13 +14,20 @@
 		840DD5B519AB744000CAA173 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 840DD5B419AB744000CAA173 /* main.m */; };
 		840DD5B919AB744000CAA173 /* VSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 840DD5B819AB744000CAA173 /* VSAppDelegate.m */; };
 		840DD5BC19AB744000CAA173 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 840DD5BA19AB744000CAA173 /* Main.storyboard */; };
-		840DD5BF19AB744000CAA173 /* VSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 840DD5BE19AB744000CAA173 /* VSViewController.m */; };
 		840DD5C119AB744000CAA173 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 840DD5C019AB744000CAA173 /* Images.xcassets */; };
 		840DD5C819AB744000CAA173 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 840DD5C719AB744000CAA173 /* XCTest.framework */; };
 		840DD5C919AB744000CAA173 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 840DD5A819AB744000CAA173 /* Foundation.framework */; };
 		840DD5CA19AB744000CAA173 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 840DD5AC19AB744000CAA173 /* UIKit.framework */; };
 		840DD5D219AB744000CAA173 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 840DD5D019AB744000CAA173 /* InfoPlist.strings */; };
 		840DD5D419AB744000CAA173 /* PhoneBookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 840DD5D319AB744000CAA173 /* PhoneBookTests.m */; };
+		840DD5E519AB921300CAA173 /* VSStartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 840DD5E419AB921300CAA173 /* VSStartViewController.m */; };
+		840DD5E819AB92F900CAA173 /* VSPhoneListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 840DD5E719AB92F900CAA173 /* VSPhoneListViewController.m */; };
+		840DD5EB19AB931C00CAA173 /* VSContactDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 840DD5EA19AB931C00CAA173 /* VSContactDetailsViewController.m */; };
+		840DD5EE19AB937100CAA173 /* VSAddContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 840DD5ED19AB937100CAA173 /* VSAddContactViewController.m */; };
+		840DD5F319ABA74600CAA173 /* VSPhoneBookCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 840DD5F219ABA74600CAA173 /* VSPhoneBookCell.m */; };
+		84EDECE319B21B3B005EA9F2 /* VSContactModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EDECE219B21B3B005EA9F2 /* VSContactModel.m */; };
+		84EDECE719B21D50005EA9F2 /* VSContactsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EDECE619B21D50005EA9F2 /* VSContactsManager.m */; };
+		84FE439E19ABF5E3009F10C3 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 84FE439D19ABF5E3009F10C3 /* icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +52,27 @@
 		840DD5B719AB744000CAA173 /* VSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VSAppDelegate.h; sourceTree = "<group>"; };
 		840DD5B819AB744000CAA173 /* VSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VSAppDelegate.m; sourceTree = "<group>"; };
 		840DD5BB19AB744000CAA173 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		840DD5BD19AB744000CAA173 /* VSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VSViewController.h; sourceTree = "<group>"; };
-		840DD5BE19AB744000CAA173 /* VSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VSViewController.m; sourceTree = "<group>"; };
 		840DD5C019AB744000CAA173 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		840DD5C619AB744000CAA173 /* PhoneBookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhoneBookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		840DD5C719AB744000CAA173 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		840DD5CF19AB744000CAA173 /* PhoneBookTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PhoneBookTests-Info.plist"; sourceTree = "<group>"; };
 		840DD5D119AB744000CAA173 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		840DD5D319AB744000CAA173 /* PhoneBookTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhoneBookTests.m; sourceTree = "<group>"; };
+		840DD5E319AB921300CAA173 /* VSStartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSStartViewController.h; sourceTree = "<group>"; };
+		840DD5E419AB921300CAA173 /* VSStartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSStartViewController.m; sourceTree = "<group>"; };
+		840DD5E619AB92F900CAA173 /* VSPhoneListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSPhoneListViewController.h; sourceTree = "<group>"; };
+		840DD5E719AB92F900CAA173 /* VSPhoneListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSPhoneListViewController.m; sourceTree = "<group>"; };
+		840DD5E919AB931C00CAA173 /* VSContactDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSContactDetailsViewController.h; sourceTree = "<group>"; };
+		840DD5EA19AB931C00CAA173 /* VSContactDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSContactDetailsViewController.m; sourceTree = "<group>"; };
+		840DD5EC19AB937100CAA173 /* VSAddContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSAddContactViewController.h; sourceTree = "<group>"; };
+		840DD5ED19AB937100CAA173 /* VSAddContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSAddContactViewController.m; sourceTree = "<group>"; };
+		840DD5F119ABA74600CAA173 /* VSPhoneBookCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSPhoneBookCell.h; sourceTree = "<group>"; };
+		840DD5F219ABA74600CAA173 /* VSPhoneBookCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSPhoneBookCell.m; sourceTree = "<group>"; };
+		84EDECE119B21B3B005EA9F2 /* VSContactModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSContactModel.h; sourceTree = "<group>"; };
+		84EDECE219B21B3B005EA9F2 /* VSContactModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSContactModel.m; sourceTree = "<group>"; };
+		84EDECE519B21D50005EA9F2 /* VSContactsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSContactsManager.h; sourceTree = "<group>"; };
+		84EDECE619B21D50005EA9F2 /* VSContactsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSContactsManager.m; sourceTree = "<group>"; };
+		84FE439D19ABF5E3009F10C3 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,11 +132,11 @@
 		840DD5AE19AB744000CAA173 /* PhoneBook */ = {
 			isa = PBXGroup;
 			children = (
+				84FE439B19ABF4D0009F10C3 /* Resources */,
+				840DD5DD19AB921300CAA173 /* Classes */,
 				840DD5B719AB744000CAA173 /* VSAppDelegate.h */,
 				840DD5B819AB744000CAA173 /* VSAppDelegate.m */,
 				840DD5BA19AB744000CAA173 /* Main.storyboard */,
-				840DD5BD19AB744000CAA173 /* VSViewController.h */,
-				840DD5BE19AB744000CAA173 /* VSViewController.m */,
 				840DD5C019AB744000CAA173 /* Images.xcassets */,
 				840DD5AF19AB744000CAA173 /* Supporting Files */,
 			);
@@ -150,6 +170,115 @@
 				840DD5D019AB744000CAA173 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		840DD5DD19AB921300CAA173 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				84EDECE419B21D14005EA9F2 /* Managers */,
+				84EDECE019B21B18005EA9F2 /* Models */,
+				840DD5EF19ABA70C00CAA173 /* Cells */,
+				840DD5DE19AB921300CAA173 /* ViewControllers */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		840DD5DE19AB921300CAA173 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				840DD5DF19AB921300CAA173 /* AddContactViewController */,
+				840DD5E019AB921300CAA173 /* ContactDetailsViewController */,
+				840DD5E119AB921300CAA173 /* PhoneListViewController */,
+				840DD5E219AB921300CAA173 /* StartViewController */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		840DD5DF19AB921300CAA173 /* AddContactViewController */ = {
+			isa = PBXGroup;
+			children = (
+				840DD5EC19AB937100CAA173 /* VSAddContactViewController.h */,
+				840DD5ED19AB937100CAA173 /* VSAddContactViewController.m */,
+			);
+			path = AddContactViewController;
+			sourceTree = "<group>";
+		};
+		840DD5E019AB921300CAA173 /* ContactDetailsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				840DD5E919AB931C00CAA173 /* VSContactDetailsViewController.h */,
+				840DD5EA19AB931C00CAA173 /* VSContactDetailsViewController.m */,
+			);
+			path = ContactDetailsViewController;
+			sourceTree = "<group>";
+		};
+		840DD5E119AB921300CAA173 /* PhoneListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				840DD5E619AB92F900CAA173 /* VSPhoneListViewController.h */,
+				840DD5E719AB92F900CAA173 /* VSPhoneListViewController.m */,
+			);
+			path = PhoneListViewController;
+			sourceTree = "<group>";
+		};
+		840DD5E219AB921300CAA173 /* StartViewController */ = {
+			isa = PBXGroup;
+			children = (
+				840DD5E319AB921300CAA173 /* VSStartViewController.h */,
+				840DD5E419AB921300CAA173 /* VSStartViewController.m */,
+			);
+			path = StartViewController;
+			sourceTree = "<group>";
+		};
+		840DD5EF19ABA70C00CAA173 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				840DD5F019ABA70C00CAA173 /* PhoneBookCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		840DD5F019ABA70C00CAA173 /* PhoneBookCell */ = {
+			isa = PBXGroup;
+			children = (
+				840DD5F119ABA74600CAA173 /* VSPhoneBookCell.h */,
+				840DD5F219ABA74600CAA173 /* VSPhoneBookCell.m */,
+			);
+			path = PhoneBookCell;
+			sourceTree = "<group>";
+		};
+		84EDECE019B21B18005EA9F2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				84EDECE119B21B3B005EA9F2 /* VSContactModel.h */,
+				84EDECE219B21B3B005EA9F2 /* VSContactModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		84EDECE419B21D14005EA9F2 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				84EDECE519B21D50005EA9F2 /* VSContactsManager.h */,
+				84EDECE619B21D50005EA9F2 /* VSContactsManager.m */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		84FE439B19ABF4D0009F10C3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				84FE439C19ABF4D0009F10C3 /* Images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		84FE439C19ABF4D0009F10C3 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				84FE439D19ABF5E3009F10C3 /* icon.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +358,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84FE439E19ABF5E3009F10C3 /* icon.png in Resources */,
 				840DD5C119AB744000CAA173 /* Images.xcassets in Resources */,
 				840DD5B319AB744000CAA173 /* InfoPlist.strings in Resources */,
 				840DD5BC19AB744000CAA173 /* Main.storyboard in Resources */,
@@ -250,8 +380,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				840DD5BF19AB744000CAA173 /* VSViewController.m in Sources */,
+				840DD5E819AB92F900CAA173 /* VSPhoneListViewController.m in Sources */,
+				84EDECE319B21B3B005EA9F2 /* VSContactModel.m in Sources */,
+				840DD5F319ABA74600CAA173 /* VSPhoneBookCell.m in Sources */,
+				840DD5E519AB921300CAA173 /* VSStartViewController.m in Sources */,
+				840DD5EE19AB937100CAA173 /* VSAddContactViewController.m in Sources */,
+				84EDECE719B21D50005EA9F2 /* VSContactsManager.m in Sources */,
 				840DD5B519AB744000CAA173 /* main.m in Sources */,
+				840DD5EB19AB931C00CAA173 /* VSContactDetailsViewController.m in Sources */,
 				840DD5B919AB744000CAA173 /* VSAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -380,6 +516,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PhoneBook/PhoneBook-Prefix.pch";
 				INFOPLIST_FILE = "PhoneBook/PhoneBook-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -393,6 +530,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PhoneBook/PhoneBook-Prefix.pch";
 				INFOPLIST_FILE = "PhoneBook/PhoneBook-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -457,6 +595,7 @@
 				840DD5D919AB744000CAA173 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		840DD5DA19AB744000CAA173 /* Build configuration list for PBXNativeTarget "PhoneBookTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +604,7 @@
 				840DD5DC19AB744000CAA173 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
