@@ -25,6 +25,11 @@
     self.filteredContactList = [NSArray arrayWithArray:[VSContactsManager sharedInstance].contacts];
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [[VSContactsManager sharedInstance] sortContactList];
+}
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return self.filteredContactList.count;

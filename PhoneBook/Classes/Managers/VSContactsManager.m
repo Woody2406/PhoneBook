@@ -49,9 +49,10 @@
                 }
                 ABMultiValueRef phones = ABRecordCopyValue(CFBridgingRetain(allContacts[i]), kABPersonPhoneProperty);
                 if (phones) {
-                    contact.phoneNumber = [(__bridge_transfer NSString *)ABMultiValueCopyValueAtIndex(phones, 0) integerValue];
+                    contact.phoneNumber = (__bridge_transfer NSString *)ABMultiValueCopyValueAtIndex(phones, 0);
                 }
                 contact.birthday = (__bridge_transfer NSDate *)ABRecordCopyValue(CFBridgingRetain(allContacts[i]), kABPersonBirthdayProperty);
+                contact.photo = [UIImage imageWithData:(__bridge_transfer NSData *)ABPersonCopyImageDataWithFormat(CFBridgingRetain(allContacts[i]), kABPersonImageFormatThumbnail)];
                 
                 [self.contacts addObject:contact];
             }
@@ -72,9 +73,10 @@
         NSMutableDictionary *contactDictionary = [[NSMutableDictionary alloc] init];
         [contactDictionary setObject:contact.name ? contact.name : @"" forKey:@"name"];
         [contactDictionary setObject:contact.surname ? contact.surname : @"" forKey:@"surname"];
-        [contactDictionary setObject:[NSNumber numberWithInteger:contact.phoneNumber ] ? [NSNumber numberWithInteger:contact.phoneNumber ] : @0 forKey:@"phone"];
+        [contactDictionary setObject:contact.phoneNumber ? contact.phoneNumber : @"" forKey:@"phone"];
         [contactDictionary setObject:contact.email ? contact.email : @"" forKey:@"email"];
         [contactDictionary setObject:contact.birthday ? contact.birthday : [NSDate dateWithTimeIntervalSince1970:-999999999999999999] forKey:@"birthday"];
+        [contactDictionary setObject:contact.photo ? UIImagePNGRepresentation(contact.photo) : UIImagePNGRepresentation([UIImage imageNamed:@"DefaultProfileImage"]) forKey:@"photo"];
         [contacts addObject:contactDictionary];
     }
     [[NSUserDefaults standardUserDefaults] setObject:contacts forKey:@"contactList"];
@@ -89,12 +91,18 @@
         contactModel.name = [contact valueForKey:@"name"];
         contactModel.surname = [contact valueForKey:@"surname"];
         contactModel.email = [contact valueForKey:@"email"];
-        contactModel.phoneNumber = [(NSNumber *)[contact valueForKey:@"phone"] integerValue];
+        contactModel.phoneNumber = [contact valueForKey:@"phone"];
         contactModel.birthday = [contact valueForKey:@"birthday"];
+        contactModel.photo = [UIImage imageWithData:[contact valueForKey:@"photo"]];
         [self.contacts addObject:contactModel];
 
     }
+    [self sortContactList];
+}
 
+- (void)sortContactList
+{
+    
 }
 
 @end

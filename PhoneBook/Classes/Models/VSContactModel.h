@@ -11,7 +11,7 @@
 
 @property (strong, nonatomic) NSString *name;
 @property (strong, nonatomic) NSString *surname;
-@property (assign, nonatomic) NSInteger phoneNumber;
+@property (strong, nonatomic) NSString *phoneNumber;
 @property (strong, nonatomic) NSString *email;
 @property (strong, nonatomic) NSDate *birthday;
 @property (strong, nonatomic) UIImage *photo;

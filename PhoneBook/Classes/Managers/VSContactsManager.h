@@ -16,5 +16,6 @@
 + (instancetype)sharedInstance;
 - (void)getContactsFromPhone;
 - (void)saveContactList;
+- (void)sortContactList;
 
 @end

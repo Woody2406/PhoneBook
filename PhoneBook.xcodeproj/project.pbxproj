@@ -25,6 +25,7 @@
 		840DD5EB19AB931C00CAA173 /* VSContactDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 840DD5EA19AB931C00CAA173 /* VSContactDetailsViewController.m */; };
 		840DD5EE19AB937100CAA173 /* VSAddContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 840DD5ED19AB937100CAA173 /* VSAddContactViewController.m */; };
 		840DD5F319ABA74600CAA173 /* VSPhoneBookCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 840DD5F219ABA74600CAA173 /* VSPhoneBookCell.m */; };
+		84E6303519B381FA005EBF86 /* DefaultProfileImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84E6303419B381FA005EBF86 /* DefaultProfileImage.jpg */; };
 		84EDECE319B21B3B005EA9F2 /* VSContactModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EDECE219B21B3B005EA9F2 /* VSContactModel.m */; };
 		84EDECE719B21D50005EA9F2 /* VSContactsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EDECE619B21D50005EA9F2 /* VSContactsManager.m */; };
 		84FE439E19ABF5E3009F10C3 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 84FE439D19ABF5E3009F10C3 /* icon.png */; };
@@ -68,6 +69,7 @@
 		840DD5ED19AB937100CAA173 /* VSAddContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSAddContactViewController.m; sourceTree = "<group>"; };
 		840DD5F119ABA74600CAA173 /* VSPhoneBookCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSPhoneBookCell.h; sourceTree = "<group>"; };
 		840DD5F219ABA74600CAA173 /* VSPhoneBookCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSPhoneBookCell.m; sourceTree = "<group>"; };
+		84E6303419B381FA005EBF86 /* DefaultProfileImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = DefaultProfileImage.jpg; sourceTree = "<group>"; };
 		84EDECE119B21B3B005EA9F2 /* VSContactModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSContactModel.h; sourceTree = "<group>"; };
 		84EDECE219B21B3B005EA9F2 /* VSContactModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSContactModel.m; sourceTree = "<group>"; };
 		84EDECE519B21D50005EA9F2 /* VSContactsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSContactsManager.h; sourceTree = "<group>"; };
@@ -276,6 +278,7 @@
 		84FE439C19ABF4D0009F10C3 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				84E6303419B381FA005EBF86 /* DefaultProfileImage.jpg */,
 				84FE439D19ABF5E3009F10C3 /* icon.png */,
 			);
 			path = Images;
@@ -362,6 +365,7 @@
 				840DD5C119AB744000CAA173 /* Images.xcassets in Resources */,
 				840DD5B319AB744000CAA173 /* InfoPlist.strings in Resources */,
 				840DD5BC19AB744000CAA173 /* Main.storyboard in Resources */,
+				84E6303519B381FA005EBF86 /* DefaultProfileImage.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
