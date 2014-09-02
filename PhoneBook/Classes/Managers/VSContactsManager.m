@@ -32,7 +32,6 @@
                 NSLog(@"Just denied");
                 return;
             }
-            
             ABAddressBookRef addressBookRef = ABAddressBookCreateWithOptions(NULL, nil);
             
             NSArray *allContacts = (__bridge NSArray *)ABAddressBookCopyArrayOfAllPeople(addressBookRef);

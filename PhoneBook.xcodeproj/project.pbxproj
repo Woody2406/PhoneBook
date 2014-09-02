@@ -28,6 +28,7 @@
 		84E6303519B381FA005EBF86 /* DefaultProfileImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84E6303419B381FA005EBF86 /* DefaultProfileImage.jpg */; };
 		84EDECE319B21B3B005EA9F2 /* VSContactModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EDECE219B21B3B005EA9F2 /* VSContactModel.m */; };
 		84EDECE719B21D50005EA9F2 /* VSContactsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EDECE619B21D50005EA9F2 /* VSContactsManager.m */; };
+		84F07EA519B66675008B6946 /* ChooseImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 84F07EA419B66675008B6946 /* ChooseImage.png */; };
 		84FE439E19ABF5E3009F10C3 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 84FE439D19ABF5E3009F10C3 /* icon.png */; };
 /* End PBXBuildFile section */
 
@@ -74,6 +75,7 @@
 		84EDECE219B21B3B005EA9F2 /* VSContactModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSContactModel.m; sourceTree = "<group>"; };
 		84EDECE519B21D50005EA9F2 /* VSContactsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSContactsManager.h; sourceTree = "<group>"; };
 		84EDECE619B21D50005EA9F2 /* VSContactsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSContactsManager.m; sourceTree = "<group>"; };
+		84F07EA419B66675008B6946 /* ChooseImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ChooseImage.png; sourceTree = "<group>"; };
 		84FE439D19ABF5E3009F10C3 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -278,6 +280,7 @@
 		84FE439C19ABF4D0009F10C3 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				84F07EA419B66675008B6946 /* ChooseImage.png */,
 				84E6303419B381FA005EBF86 /* DefaultProfileImage.jpg */,
 				84FE439D19ABF5E3009F10C3 /* icon.png */,
 			);
@@ -361,6 +364,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84F07EA519B66675008B6946 /* ChooseImage.png in Resources */,
 				84FE439E19ABF5E3009F10C3 /* icon.png in Resources */,
 				840DD5C119AB744000CAA173 /* Images.xcassets in Resources */,
 				840DD5B319AB744000CAA173 /* InfoPlist.strings in Resources */,

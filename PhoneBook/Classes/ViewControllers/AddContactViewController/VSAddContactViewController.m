@@ -9,7 +9,7 @@
 #import "VSAddContactViewController.h"
 #import "VSContactsManager.h"
 
-@interface VSAddContactViewController () <UITextFieldDelegate>
+@interface VSAddContactViewController () <UITextFieldDelegate, UIImagePickerControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UIButton *cancelButton;
 @property (weak, nonatomic) IBOutlet UIButton *doneButton;
@@ -41,11 +41,16 @@
     }
     self.photoImageView.layer.cornerRadius = self.photoImageView.frame.size.width / 2;
     self.photoImageView.layer.masksToBounds = YES;
+    
+    UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(showImagePickerController:)];
+    [self.photoImageView addGestureRecognizer:tapGesture];
 }
 
 - (IBAction)cancel:(id)sender
 {
     [self dismissViewControllerAnimated:YES completion:nil];
+    self.photoImageView.gestureRecognizers = nil;
+
 }
 - (IBAction)newDateValue:(id)sender
 {
@@ -81,11 +86,26 @@
      [[VSContactsManager sharedInstance] saveContactList];
     
     [self dismissViewControllerAnimated:YES completion:nil];
+    self.photoImageView.gestureRecognizers = nil;
 }
 
 - (void)textFieldDidBeginEditing:(UITextField *)textField
 {
     self.datePicker.hidden = YES;
+}
+
+- (void)showImagePickerController:(UITapGestureRecognizer *)tapGesture
+{
+    UIImagePickerController *imagePickerController = [[UIImagePickerController alloc] init];
+    imagePickerController.delegate = (id)self;
+    imagePickerController.allowsEditing = YES;
+    [self presentViewController:imagePickerController animated:YES completion:nil];
+}
+
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingImage:(UIImage *)image editingInfo:(NSDictionary *)editingInfo
+{
+    self.photoImageView.image = image;
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
