@@ -14,6 +14,7 @@
 @interface VSPhoneListViewController () <UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate>
 
 @property (strong, nonatomic) NSArray *filteredContactList;
+@property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
 
 @end
 
@@ -28,6 +29,9 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [[VSContactsManager sharedInstance] sortContactList];
+    self.filteredContactList = [VSContactsManager sharedInstance].contacts;
+    [self.contactListTableView reloadData];
+
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -47,6 +51,11 @@
 
  - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    if (self.searchBar.isFirstResponder) {
+        [self.searchBar resignFirstResponder];
+        [tableView cellForRowAtIndexPath:indexPath].selected = NO;
+        return;
+    }
     VSContactDetailsViewController *detailController = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"contactDetails"];
     detailController.contact = [VSContactsManager sharedInstance].contacts[indexPath.row];
     [self.navigationController pushViewController:detailController animated:YES];

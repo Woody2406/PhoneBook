@@ -102,7 +102,7 @@
 
 - (void)sortContactList
 {
-    
+    [self.contacts sortUsingDescriptors:@[[NSSortDescriptor sortDescriptorWithKey:@"name" ascending:YES]]];
 }
 
 @end

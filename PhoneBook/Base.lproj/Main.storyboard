@@ -156,6 +156,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="contactListTableView" destination="inQ-mt-UwW" id="n9v-Tl-6k9"/>
+                        <outlet property="searchBar" destination="J27-R9-qGE" id="Jvf-Mu-oiJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dwh-Kz-C3a" userLabel="First Responder" sceneMemberID="firstResponder"/>

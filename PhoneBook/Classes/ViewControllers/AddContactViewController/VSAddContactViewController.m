@@ -94,4 +94,17 @@
     return YES;
 }
 
+- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string
+{
+    if ((textField == self.nameTextField || textField == self.surnameTextField) && string.length) {
+        NSMutableString *newText = [NSMutableString stringWithString:textField.text];
+        [newText insertString:string atIndex:newText.length];
+        if (newText.length == 1) {
+            textField.text = [newText uppercaseString];
+            return NO;
+        }
+    }
+    return YES;
+}
+
 @end
